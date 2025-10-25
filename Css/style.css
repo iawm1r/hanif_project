@@ -1,5 +1,6 @@
 header {
   nav {
+    background: linear-gradient(180deg, #4b2e05e8 0%, #7b5e2a 100%);
     img {
       width: 50px;
       height: 50px;
@@ -8,44 +9,219 @@ header {
       ul {
         gap: 10px;
         .nav-item {
-          .texts_header{
-            position: relative;
-            overflow: hidden;
+          .texts_header {
             font-family: "vazirmatn";
-            &::after {
-              content: "";
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              width: 0%;
-              background-color:black;
-              height: 2px;
-              transition: width 0.3s ease;
-            }
-            &:hover::after {
-              width: 100%;
+            color: #e6d5b8 !important;
+            letter-spacing: 0;
+            transition: all 0.2s linear;
+            &:hover {
+              color: #d4af37;
+              letter-spacing: 10;
+              font-weight: 600;
+              transform: scale(1.15);
             }
           }
         }
       }
     }
-    .login_box{
-        width: 120px;
-        height: 40px;
-        border: 2px solid gray;
-        .flex_text{
-            line-height: 30px;
+    .login_box {
+      width: 120px;
+      height: 40px;
+      border: 1px solid #c2a57e;
+      background: transparent;
+
+      .flex_text {
+        line-height: 30px;
+        a {
+          color: #e6d5b8;
+          font-family: "vazirmatn";
         }
+      }
     }
   }
 }
 /*Responsive Size*/
-@media  screen and (max-width:540px) {}
-@media  (min-width:540px) and (max-width:768px) {}
-@media  (min-width:768px) and (max-width:992px) {}
-@media  (min-width:992px) and (max-width:1200px) {}
-@font-face {
+@media screen and (max-width: 540px) {
+  header {
+    nav {
+      background: linear-gradient(180deg, #4b2e05e8 0%, #7b5e2a 100%);
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      div {
+        ul {
+          gap: 10px;
+          .nav-item {
+            .texts_header {
+              font-family: "vazirmatn";
+              color: #e6d5b8 !important;
+              letter-spacing: 0;
+              transition: all 0.2s linear;
 
-    font-family: "vazirmatn";
-    src: url(../Fonts/Vazirmatn-Regular.ttf);
+              &:hover {
+                color: #d4af37;
+                letter-spacing: 10;
+                font-weight: 600;
+                transform: scale(1.05);
+              }
+            }
+          }
+        }
+      }
+      .login_box {
+        width: 120px;
+        height: 40px;
+        border: 1px solid #c2a57e;
+        background: transparent;
+        display: none;
+        .flex_text {
+          line-height: 30px;
+          a {
+            color: #e6d5b8;
+            font-family: "vazirmatn";
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 540px) and (max-width: 768px) {
+  header {
+    nav {
+      background: linear-gradient(180deg, #4b2e05e8 0%, #7b5e2a 100%);
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      div {
+        ul {
+          gap: 10px;
+          .nav-item {
+            .texts_header {
+              font-family: "vazirmatn";
+              color: #e6d5b8 !important;
+              letter-spacing: 0;
+              transition: all 0.2s linear;
+
+              &:hover {
+                color: #d4af37;
+                letter-spacing: 10;
+                font-weight: 600;
+                transform: scale(1.05);
+              }
+            }
+          }
+        }
+      }
+      .login_box {
+        width: 120px;
+        height: 40px;
+        border: 1px solid #c2a57e;
+        background: transparent;
+        display: none;
+        .flex_text {
+          line-height: 30px;
+          a {
+            color: #e6d5b8;
+            font-family: "vazirmatn";
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  header {
+    nav {
+      background: linear-gradient(180deg, #4b2e05e8 0%, #7b5e2a 100%);
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      div {
+        ul {
+          gap: 10px;
+          .nav-item {
+            .texts_header {
+              font-family: "vazirmatn";
+              color: #e6d5b8 !important;
+              letter-spacing: 0;
+              transition: all 0.2s linear;
+
+              &:hover {
+                color: #d4af37;
+                letter-spacing: 10;
+                font-weight: 600;
+                transform: scale(1.02);
+              }
+            }
+          }
+        }
+      }
+      .login_box {
+        width: 120px;
+        height: 40px;
+        border: 1px solid #c2a57e;
+        background: transparent;
+
+        .flex_text {
+          line-height: 30px;
+          a {
+            color: #e6d5b8;
+            font-family: "vazirmatn";
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  header {
+    nav {
+      background: linear-gradient(180deg, #4b2e05e8 0%, #7b5e2a 100%);
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      div {
+        ul {
+          gap: 10px;
+          .nav-item {
+            .texts_header {
+              font-family: "vazirmatn";
+              color: #e6d5b8 !important;
+              letter-spacing: 0;
+              transition: all 0.2s linear;
+
+              &:hover {
+                color: #d4af37;
+                letter-spacing: 10;
+                font-weight: 600;
+                transform: scale(1.15);
+              }
+            }
+          }
+        }
+      }
+      .login_box {
+        width: 120px;
+        height: 40px;
+        border: 1px solid #c2a57e;
+        background: transparent;
+
+        .flex_text {
+          line-height: 30px;
+          a {
+            color: #e6d5b8;
+            font-family: "vazirmatn";
+          }
+        }
+      }
+    }
+  }
+}
+@font-face {
+  font-family: "vazirmatn";
+  src: url(../Fonts/Vazirmatn-Regular.ttf);
 }
