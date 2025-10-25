@@ -1,29 +1,51 @@
-header{
-    nav{
-        div{
-            ul{
-                  gap: 30px;
-                li{
-                    a{
-                        position: relative;
-                        overflow: hidden;
-                        
-                        &::after{
-                            content: "";
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-                            width: 0%;
-                            height: 2px;
-                            background-color: red;
-                            transition: width 0.3s ease;
-                        }
-                        &:hover::after{
-                            width: 100%;
-                        }
-                    }
-                }
+header {
+  nav {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    div {
+      ul {
+        gap: 10px;
+        .nav-item {
+          .texts_header{
+            position: relative;
+            overflow: hidden;
+            font-family: "vazirmatn";
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0%;
+              background-color:black;
+              height: 2px;
+              transition: width 0.3s ease;
             }
+            &:hover::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .login_box{
+        width: 120px;
+        height: 40px;
+        border: 2px solid gray;
+        .flex_text{
+            line-height: 30px;
         }
     }
+  }
+}
+/*Responsive Size*/
+@media  screen and (max-width:540px) {}
+@media  (min-width:540px) and (max-width:768px) {}
+@media  (min-width:768px) and (max-width:992px) {}
+@media  (min-width:992px) and (max-width:1200px) {}
+@font-face {
+
+    font-family: "vazirmatn";
+    src: url(../Fonts/Vazirmatn-Regular.ttf);
 }
