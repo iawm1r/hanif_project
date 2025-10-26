@@ -29,12 +29,19 @@ header {
       height: 40px;
       border: 1px solid #c2a57e;
       background: transparent;
-
       .flex_text {
         line-height: 30px;
         a {
           color: #e6d5b8;
           font-family: "vazirmatn";
+          transition: all 0.2s linear;
+           letter-spacing: 0;
+          &:hover {
+            color: #d4af37;
+            letter-spacing: 10;
+            font-weight: 600;
+            transform: scale(1.15);
+          }
         }
       }
     }
